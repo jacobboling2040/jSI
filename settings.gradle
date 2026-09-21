@@ -1,0 +1,14 @@
+plugins {
+    // Allows automatic download of JDKs for the toolchains below.
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '1.0.0'
+}
+
+rootProject.name = 'jSI'
+
+// Annotations only. Consumers put this on their compile classpath (compileOnly);
+// nothing here is needed at runtime.
+include('annotations')
+
+// Compile-time machinery: the SIUnit model, the annotation processor, and
+// (next) the javac plugin. Consumers put this on their annotation processor path.
+include('checker')

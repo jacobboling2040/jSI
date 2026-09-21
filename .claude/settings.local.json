@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gradle --version)",
+      "Bash(mise ls-remote *)",
+      "Bash(java -version)"
+    ]
+  }
+}

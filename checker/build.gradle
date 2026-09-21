@@ -1,0 +1,19 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Needed to read @Dimension off the unit annotations. Not exposed to
+    // consumers of the checker, hence implementation rather than api.
+    implementation project(':annotations')
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}

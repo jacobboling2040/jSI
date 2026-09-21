@@ -1,0 +1,12 @@
+plugins {
+    id 'java-library'
+}
+
+// No dependencies, by design: this jar must be droppable onto any compile
+// classpath without dragging anything else along.
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
