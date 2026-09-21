@@ -12,3 +12,6 @@ bin
 
 # Scratch fixtures for manual checker runs
 scratch/out
+
+# Ignore Claude Code local settings
+.claude/
